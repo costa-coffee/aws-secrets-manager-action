@@ -15,7 +15,7 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3.3.0
     - run: npm ci
     - run: npm test
 
@@ -26,7 +26,7 @@ jobs:
     needs: [unit-tests]
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3.3.0
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2.0.0
       with:
