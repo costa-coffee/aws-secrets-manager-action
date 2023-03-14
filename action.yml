@@ -15,9 +15,7 @@ inputs:
     default: 'false'
 runs:
   using: 'node12'
-  main: |
-    npm install
-    node dist/index.js
+  main: 'dist/index.js'
 branding:
   icon: lock
   color: blue
